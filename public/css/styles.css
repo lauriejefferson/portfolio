@@ -62,6 +62,15 @@ li {
 	--ff-body: "PT Sans", serif;
 	--ff-header: "Open Sans", serif;
 
+	--fs-200: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
+	--fs-300: clamp(0.8333rem, 0.7754rem + 0.2899vw, 1rem);
+	--fs-400: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+	--fs-500: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
+	--fs-600: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
+	--fs-700: clamp(1.728rem, 1.4799rem + 1.2407vw, 2.4414rem);
+	--fs-800: clamp(2.0736rem, 1.7334rem + 1.7011vw, 3.0518rem);
+	--fs-900: clamp(2.4883rem, 2.027rem + 2.3067vw, 3.8147rem);
+
 	--fw-300: 400;
 	--fw-400: 400;
 	--fw-500: 500;
@@ -69,4 +78,15 @@ li {
 	--fw-700: 700;
 	--fw-800: 800;
 
+	--header-1: var(--fs-900);
+	--header-2: var(--fs-800);
+	--header-3: var(--fs-700);
+	--header-4: var(--fs-600);
+	--header-5: var(--fs-500);
+	--fs-body: var(--fs-400);
+
+}
+
+body {
+	font-family: var(--ff-body);
 }
