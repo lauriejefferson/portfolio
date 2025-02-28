@@ -18,7 +18,7 @@
 /* dark mode user-agent-styles */
 /* improves punctuation in supported browsers */
 html {
-	color-scheme: dark light;
+	/* color-scheme: dark light; */
 	hanging-punctuation: first last;
 }
 
@@ -55,9 +55,10 @@ li {
 }
 
 :root {
-	--clr-dark-green: hsl(180, 100, 7);
-	--clr-persimmon: hsl(20, 85, 49);
-	--clr-isabelline: hsl(34, 37, 96);
+
+	--clr-primary: hsl(34, 37%, 96%);
+	--clr-secondary: hsl(180, 100%, 7%);
+	--clr-accent: hsl(20, 85, 49);
 
 	--ff-body: "PT Sans", serif;
 	--ff-header: "Open Sans", serif;
@@ -89,4 +90,24 @@ li {
 
 body {
 	font-family: var(--ff-body);
+	background-color: var(--clr-primary);
+	color: var(--clr-secondary);
+	display: grid;
+	grid-template-columns: min(1440px, 100% - 2rem);
+	place-items: center;
+
+}
+
+h1, h2, h3 {
+	font-family: var(--ff-header);
+	font-weight: var(--fw-700);
+	letter-spacing: 5px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+section {
+	display: grid;
 }
