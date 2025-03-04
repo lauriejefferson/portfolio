@@ -1,4 +1,8 @@
-import { InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
+import {
+	InputPathToUrlTransformPlugin,
+	HtmlBasePlugin,
+	IdAttributePlugin,
+} from "@11ty/eleventy";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginFilters from "./_config/filters.js";
@@ -9,8 +13,8 @@ export default async function (eleventyConfig) {
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
-	eleventyConfig.addPassthroughCopy("./content/css/");
-	eleventyConfig.addPassthroughCopy("./content/img/");
+	eleventyConfig.addPassthroughCopy("content/css/");
+	eleventyConfig.addPassthroughCopy("content/img/");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -47,11 +51,11 @@ export default async function (eleventyConfig) {
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
-	// eleventyConfig.addPlugin(IdAttributePlugin, {
-	// 	// by default we use Eleventy’s built-in `slugify` filter:
-	// 	// slugify: eleventyConfig.getFilter("slugify"),
-	// 	// selector: "h1,h2,h3,h4,h5,h6", // default
-	// });
+	eleventyConfig.addPlugin(IdAttributePlugin, {
+		// by default we use Eleventy’s built-in `slugify` filter:
+		slugify: eleventyConfig.getFilter("slugify"),
+		selector: "h1,h2,h3,h4,h5,h6", // default
+	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return new Date().toISOString();
