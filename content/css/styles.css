@@ -58,19 +58,19 @@ li {
 
 	--clr-primary: hsl(34, 37%, 96%);
 	--clr-secondary: hsl(180, 100%, 7%);
-	--clr-accent: hsl(20, 85, 49);
+	--clr-accent: #e75a13;
 
 	--ff-body: "PT Sans", serif;
 	--ff-header: "Open Sans", serif;
 
-	--fs-200: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
-	--fs-300: clamp(0.8333rem, 0.7754rem + 0.2899vw, 1rem);
-	--fs-400: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
-	--fs-500: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
-	--fs-600: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
-	--fs-700: clamp(1.728rem, 1.4799rem + 1.2407vw, 2.4414rem);
-	--fs-800: clamp(2.0736rem, 1.7334rem + 1.7011vw, 3.0518rem);
-	--fs-900: clamp(2.4883rem, 2.027rem + 2.3067vw, 3.8147rem);
+	--fs-200: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+	--fs-300: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+	--fs-400: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+	--fs-500: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+	--fs-600: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+	--fs-700: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+	--fs-800: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+	--fs-900: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
 
 	--fw-300: 400;
 	--fw-400: 400;
