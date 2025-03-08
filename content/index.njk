@@ -13,46 +13,52 @@ const eleventyNavigation = {
 		<p class='hire-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non odio? Consequatur eveniet fuga doloremque veritatis ab tempore a suscipit!</p>
 		<ul class='skills-list'>
 			<li class='skill-list-item'>
-				<div class='skill'>
-					<p class='skill-name'>HTML</p>
-					<p class='skill-value'>90%</p>
+				<div class='skill-name'>
+				<p>HTML</p>
+				<p>90%</p>
 				</div>
+				<div class="skill-indicator"></div>
 			</li>
 			<li class='skill-list-item'>
-				<div class='skill'>
-					<p class='skill-name'>CSS</p>
-					<p class='skill-value'>90%</p>
+				<div class='skill-name'>
+					<p>CSS</p>
+					<p>90%</p>
 				</div>
+				<div class="skill-indicator"></div>
 			</li>
 			<li class='skill-list-item'>
-				<div class='skill'>
-					<p class='skill-name'>JS</p>
-					<p class='skill-value'>90%</p>
-				</div>
+					<div class='skill-name'>
+				   <p>JS</p>
+					 <p>90%</p>
+					</div>
+					<div class="skill-indicator"></div>
 			</li>
 			<li class='skill-list-item'>
-				<div class='skill'>
-					<p class='skill-name'>PHP</p>
-					<p class='skill-value'>80%</p>
-				</div>
+					<div class='skill-name'>
+				   <p>PHP</p>
+					 <p>80%</p>
+					</div>
+					<div class="skill-indicator"></div>
 			</li>
 			<li class='skill-list-item'>
-				<div class='skill'>
-					<p class='skill-name'>Vue</p>
-					<p class='skill-value'>90%</p>
+				<div class='skill-name'>
+					<p>VUE</p>
+					<p>90%</p>
 				</div>
+				<div class="skill-indicator"></div>
 			</li>
 			<li class='skill-list-item'>
-				<div class='skill'>
-					<p class='skill-name'>Ruby</p>
-					<p class='skill-value'>80%</p>
+				<div class='skill-name'>
+				   <p>Ruby</p>
+					 <p>80%</p>
 				</div>
+				<div class="skill-indicator"></div>
 			</li>
 		</ul>
 
 </section>
 <section class='projects'>
-		<h1 class='projects-title'></h1>
+		<h1 class='projects-title'>Recent Projects</h1>
 		<ul class='projects-list'>
 			<li class='project-list-item'>
 				<div class='project'>
@@ -63,7 +69,7 @@ const eleventyNavigation = {
 					</div>
 				</div>
 				<div class='project-image'>
-					<img src="">
+					<img src={{github.data[0].image}} >
 				</div>
 			</li>
 			<li class='project-list-item'>
