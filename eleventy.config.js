@@ -13,8 +13,8 @@ export default async function (eleventyConfig) {
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
-	eleventyConfig.addPassthroughCopy("content/css/");
-	eleventyConfig.addPassthroughCopy("content/img/");
+	eleventyConfig.addPassthroughCopy("./content/css/");
+	eleventyConfig.addPassthroughCopy("./content/img/");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
@@ -28,25 +28,24 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// Output formats for each image.
-		formats: ["avif", "webp", "auto"],
+	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+	// 	// Output formats for each image.
+	// 	formats: ["avif", "webp", "jpeg", "png"],
 
-		// widths: ["auto"],
+	// 	widths: ["auto"],
+	// 	failOnError: false,
+	// 	htmlOptions: {
+	// 		imgAttributes: {
+	// 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+	// 			loading: "lazy",
+	// 			decoding: "async",
+	// 		},
+	// 	},
 
-		failOnError: false,
-		htmlOptions: {
-			imgAttributes: {
-				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-				loading: "lazy",
-				decoding: "async",
-			},
-		},
-
-		sharpOptions: {
-			animated: true,
-		},
-	});
+	// 	sharpOptions: {
+	// 		animated: true,
+	// 	},
+	// });
 
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);

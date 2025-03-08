@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* makes sizing simpler */
 *,
@@ -96,9 +96,9 @@ li {
 
 body {
 	font-family: var(--ff-body);
+	font-size: var(--fs-400);
 	background-color: var(--clr-primary);
 	display: grid;
-	grid-template-columns: min(1600px, 100%);
 	text-align: center;
 }
 
@@ -111,6 +111,7 @@ h1, h2, h3 {
 
 p {
 	color: var(--clr-secondary);
+	margin-block-end: var(--spacing-1);
 }
 
 h1 {
@@ -152,6 +153,7 @@ header {
 	justify-content: space-between;
 	align-content: center;
 	margin-block-start: var(--spacing-1);
+	padding-inline: 1rem;
 }
 
 .home {
@@ -189,6 +191,32 @@ nav {
 .hire {
 	display: grid;
 	place-items: center;
+}
+
+.skills-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 100px);
+	place-items: center;
+}
+
+.skill-list-item {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.skill-list-item .skill-name {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	justify-content: space-between;
+	align-content: center;
+}
+
+.skill-list-item .skill-indicator {
+	width: 90%;
+	height: 7px;
+	background: var(--clr-accent);
+	border-radius: 6px;
 }
 
 .contact {
