@@ -60,49 +60,25 @@ const eleventyNavigation = {
 <section class='projects'>
 		<h1 class='projects-title'>Recent Projects</h1>
 		<ul class='projects-list'>
+			{% for item in github %}
 			<li class='project-list-item'>
 				<div class='project'>
-					<h2 class='project-title'></h2>
+					<h2 class='project-title'>{{ item.name }}</h2>
 					<div class='project-links'>
-						<a class='project-link'></a>
-						<a class='project-link'></a>
+						<a href="{{ item.repository }}" class='project-github-link' ></a>
+						<a href="{{ item.site }}" class='project-link'></a>
 					</div>
 				</div>
 				<div class='project-image'>
-					<img src={{github.data[0].image}} >
+					<img src="{{ item.image }}">
 				</div>
 			</li>
-			<li class='project-list-item'>
-				<div class='project'>
-					<h2 class='project-title'></h2>
-					<div class='project-links'>
-						<a class='project-link'></a>
-						<a class='project-link'></a>
-					</div>
-				</div>
-				<div class='project-image'>
-					<img src="">
-				</div>
-			</li>
-			<li class='project-list-item'>
-				<div class='project'>
-					<h2 class='project-title'></h2>
-					<div class='project-links'>
-						<a class='project-link'></a>
-						<a class='project-link'></a>
-					</div>
-				</div>
-				<div class='project-image'>
-					<img src="">
-				</div>
-			</li>
+		{% endfor %}
 		</ul>
 </section>
 <section class='contact'>
-
 	<h1 class='contact-title'>Let's Work Together</h1>
 	<p class='contact-text'>Have a project in mind? Want to discuss opportunities with your organization? Let's discuss.</p>
 	<a class='secondary-cta' href='/'>Contact Me</a>
-
 </section>
 

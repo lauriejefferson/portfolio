@@ -219,6 +219,17 @@ nav {
 	border-radius: 6px;
 }
 
+.projects-list {
+	display: grid;
+	place-items: center;
+}
+
+.project-list-item {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
+}
+
 .contact {
 	background-color: var(--clr-secondary);
 	display: grid;

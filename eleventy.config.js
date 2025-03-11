@@ -1,10 +1,11 @@
+import path from "node:path";
 import {
 	InputPathToUrlTransformPlugin,
 	HtmlBasePlugin,
 	IdAttributePlugin,
 } from "@11ty/eleventy";
 import pluginNavigation from "@11ty/eleventy-navigation";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin, Image } from "@11ty/eleventy-img";
 import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
@@ -28,23 +29,45 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-	// 	// Output formats for each image.
-	// 	formats: ["avif", "webp", "jpeg", "png"],
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// Output formats for each image.
+		formats: ["avif", "webp", "png", "jpeg"],
+		outputDir: "./optimized/",
+		widths: ["auto"],
+		failOnError: false,
+		htmlOptions: {
+			imgAttributes: {
+				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+				loading: "lazy",
+				decoding: "async",
+			},
+		},
 
-	// 	widths: ["auto"],
-	// 	failOnError: false,
-	// 	htmlOptions: {
-	// 		imgAttributes: {
-	// 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-	// 			loading: "lazy",
-	// 			decoding: "async",
-	// 		},
-	// 	},
+		sharpOptions: {
+			animated: true,
+		},
+	});
 
-	// 	sharpOptions: {
-	// 		animated: true,
-	// 	},
+	// eleventyConfig.addAsyncShortcode("image", async (srcFilePath, alt, sizes) => {
+	// 	// Make the image relative to the input directory
+	// 	let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
+
+	// 	let metadata = await new Image(inputFilePath, {
+	// 		widths: [400, 800, 1600],
+	// 		formats: ["avif", "webp", "svg", "jpeg"],
+	// 		outputDir: "./optimized/",
+	// 		urlPath: "/optimized/",
+	// 		svgShortCiruit: "size",
+	// 		// svgCompressionSize: "br",
+	// 	});
+
+	// 	console.log({
+	// 		metadata,
+	// 		alt,
+	// 		sizes,
+	// 		loading: "eager",
+	// 		decoding: "async",
+	// 	});
 	// });
 
 	// Filters
@@ -86,5 +109,6 @@ export const config = {
 		includes: "../_includes", // default: "_includes" (`input` relative)
 		data: "../_data", // default: "_data" (`input` relative)
 		output: "public",
+		pathPrefix: "/portfolio",
 	},
 };
