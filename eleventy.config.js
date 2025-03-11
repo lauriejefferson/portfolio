@@ -31,8 +31,8 @@ export default async function (eleventyConfig) {
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// Output formats for each image.
-		formats: ["avif", "webp", "png", "jpeg"],
-		widths: ["600,600"],
+		formats: ["png"],
+		widths: ["600"],
 		failOnError: false,
 		htmlOptions: {
 			imgAttributes: {
@@ -108,6 +108,6 @@ export const config = {
 		includes: "../_includes", // default: "_includes" (`input` relative)
 		data: "../_data", // default: "_data" (`input` relative)
 		output: "public",
-		pathPrefix: "/portfolio",
+		pathPrefix: "/portfolio/",
 	},
 };

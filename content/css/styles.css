@@ -32,7 +32,11 @@ img,
 picture,
 svg,
 video {
-	display: block;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	vertical-align: middle;
 	max-width: 100%;
 }
 
