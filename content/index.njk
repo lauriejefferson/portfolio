@@ -61,16 +61,18 @@ const eleventyNavigation = {
 		<h1 class='projects-title'>Featured Projects</h1>
 		<ul class='projects-list'>
 			{% for item in github %}
-			<li class='project-list-item'>
-				<div class='project'>
-					<h2 class='project-title'>{{ item.name }}</h2>
-					<div class='project-links'>
-						<a href="{{ item.repository }}" class='project-github-link' ><box-icon type='logo' name='github' color='#002626'></box-icon></a>
-						<a href="{{ item.site }}" class='project-link'><box-icon name='link-external' color='#002626' ></box-icon></a>
+				{% if item.featured == true %}
+				<li class='project-list-item'>
+					<div class='project'>
+						<h2 class='project-title'>{{ item.name }}</h2>
+						<div class='project-links'>
+							<a href="{{ item.repository }}" class='project-github-link' ><box-icon type='logo' name='github' color='#002626'></box-icon></a>
+							<a href="{{ item.site }}" class='project-link'><box-icon name='link-external' color='#002626' ></box-icon></a>
+						</div>
 					</div>
-				</div>
-				<img src="{{ item.image }}" alt="frontend-mentor" height="300">
-			</li>
+					<img src="{{ item.image }}" alt="frontend-mentor" height="300">
+				</li>
+				{% endif %}
 		{% endfor %}
 		</ul>
 </section>

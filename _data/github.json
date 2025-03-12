@@ -1,7 +1,7 @@
 [
 	{
 		"name": "IP Address Tracker",
-		"description": "",
+		"description": "Enter an IP address and get geolocation information. The project uses Vue,IPify and LeafletJS ",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/ip-address-tracker",
 		"site": "https://ip-address-tracker-72vx.onrender.com/",
 		"image": "img/ip-address-tracker.png",
@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "Fylo Dark Theme Landing Page",
-		"description": "",
+		"description": "This project is a dark theme landing page. It uses HTML, CSS and JS for the email sign up form.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/fylo-dark-theme-landing-page-master",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/fylo-dark-theme-landing-page-master/index.html",
 		"image": "img/fylo-dark-theme-landing-page.png",
@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "Time Tracker Dashboard",
-		"description": "",
+		"description": "A dashboard that reports the time spent on each activity. The text for the previous period's time changes when the daily, weekly, or monthly buttons are clicked.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/time-tracking-dashboard-main",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/time-tracking-dashboard-main/index.html",
 		"image": "img/time-tracker-dashboard.png",
@@ -33,7 +33,7 @@
 	},
 	{
 		"name": "Intro Section with Dropdown Navigation",
-		"description": "",
+		"description": "A landing page with dropdown navigation.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/intro-section-with-dropdown-navigation-main",
 		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/intro-section-with-dropdown-navigation-main/index.html",
 		"image": "img/intro-section-dropdown-nav.png",
@@ -41,7 +41,7 @@
 	},
 	{
 		"name": "SunnySide Agency Landing Page",
-		"description": "",
+		"description": "A multi-section landing page with social media testimonials. ",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/sunnyside-agency-landing-page-main",
 		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/sunnyside-agency-landing-page-main/index.html",
 		"image": "img/sunnyside-agency.png",
@@ -49,7 +49,7 @@
 	},
 	{
 		"name": "Results Summary Component",
-		"description": "",
+		"description": "A results summary component that changes layout when changing from mobile to desktop.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/results-summary-component-main",
 		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/results-summary-component-main/index.html",
 		"image": "img/results-summary.png",
@@ -57,7 +57,7 @@
 	},
 	{
 		"name": "Interactive Rating Component",
-		"description": "",
+		"description": "A rating component for a support request. It provides feedback when the user submits the rating.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/interactive-rating-component",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/interactive-rating-component-main/index.html",
 		"image": "img/interactive-rating.png",
@@ -65,7 +65,7 @@
 	},
 	{
 		"name": "Intro Component with Signup Form",
-		"description": "",
+		"description": "An introductory component with a sign up form. The form displays errors when any input is empty or the email address field is not formatted correctly.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/intro-component-with-signup-form-master",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/intro-component-with-signup-form-master/index.html",
 		"image": "img/intro-component.png",
