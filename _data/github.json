@@ -1,56 +1,74 @@
 [
 	{
 		"name": "IP Address Tracker",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/ip-address-tracker",
 		"site": "https://ip-address-tracker-72vx.onrender.com/",
-		"image": "img/ip-address-tracker.png"
+		"image": "img/ip-address-tracker.png",
+		"featured": true
 	},
 	{
 		"name": "Fylo Dark Theme Landing Page",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/fylo-dark-theme-landing-page-master",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/fylo-dark-theme-landing-page-master/index.html",
-		"image": "img/fylo-dark-theme-landing-page.png"
+		"image": "img/fylo-dark-theme-landing-page.png",
+		"featured": false
 	},
 	{
 		"name": "Time Tracker Dashboard",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/time-tracking-dashboard-main",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/time-tracking-dashboard-main/index.html",
-		"image": "img/time-tracker-dashboard.png"
+		"image": "img/time-tracker-dashboard.png",
+		"featured": true
 	},
 	{
 		"name": "Advice Generator App",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/advice-generator-app-main",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/advice-generator-app-main/index.html",
-		"image": "img/advice-generator.png"
+		"image": "img/advice-generator.png",
+		"featured": false
 	},
 	{
 		"name": "Intro Section with Dropdown Navigation",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/intro-section-with-dropdown-navigation-main",
 		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/intro-section-with-dropdown-navigation-main/index.html",
-		"image": "img/intro-section-dropdown-nav.png"
+		"image": "img/intro-section-dropdown-nav.png",
+		"featured": true
 	},
 	{
 		"name": "SunnySide Agency Landing Page",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/sunnyside-agency-landing-page-main",
 		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/sunnyside-agency-landing-page-main/index.html",
-		"image": "img/sunnyside-agency.png"
+		"image": "img/sunnyside-agency.png",
+		"featured": false
 	},
 	{
 		"name": "Results Summary Component",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/results-summary-component-main",
 		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/results-summary-component-main/index.html",
-		"image": "img/results-summary.png"
+		"image": "img/results-summary.png",
+		"featured": false
 	},
 	{
 		"name": "Interactive Rating Component",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/interactive-rating-component",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/interactive-rating-component-main/index.html",
-		"image": "img/interactive-rating-component.png"
+		"image": "img/interactive-rating.png",
+		"featured": false
 	},
 	{
 		"name": "Intro Component with Signup Form",
+		"description": "",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/intro-component-with-signup-form-master",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/intro-component-with-signup-form-master/index.html",
-		"image": "img/intro-component.png"
+		"image": "img/intro-component.png",
+		"featured": false
 	}
 ]

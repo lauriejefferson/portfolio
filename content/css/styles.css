@@ -103,6 +103,7 @@ body {
 	font-size: var(--fs-400);
 	background-color: var(--clr-primary);
 	display: grid;
+	/* place-items: center; */
 	text-align: center;
 }
 
@@ -134,7 +135,7 @@ a {
 
 section {
 	display: grid;
-	grid-template-columns: 100%;
+	/* grid-template-columns: 100%; */
 	place-content: center;
 	min-height: 100svh;
 }
@@ -230,12 +231,9 @@ nav {
 
 .project-list-item {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, minmax(600px, 1fr));
 	place-items: center;
-}
-
-.project-list-item img {
-	height: 300px;
+	place-content: center;
 }
 
 .contact {
