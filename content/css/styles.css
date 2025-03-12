@@ -234,6 +234,10 @@ nav {
 	place-items: center;
 }
 
+.project-list-item img {
+	height: 300px;
+}
+
 .contact {
 	background-color: var(--clr-secondary);
 	display: grid;

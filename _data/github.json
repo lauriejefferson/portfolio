@@ -21,7 +21,7 @@
 		"name": "Advice Generator App",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/advice-generator-app-main",
 		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/advice-generator-app-main/index.html",
-		"image": "img/advice-generator-app.png"
+		"image": "img/advice-generator.png"
 	},
 	{
 		"name": "Intro Section with Dropdown Navigation",
@@ -39,7 +39,7 @@
 		"name": "Results Summary Component",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/results-summary-component-main",
 		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/results-summary-component-main/index.html",
-		"image": "img/results-summary-component.png"
+		"image": "img/results-summary.png"
 	},
 	{
 		"name": "Interactive Rating Component",
