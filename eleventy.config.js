@@ -108,6 +108,5 @@ export const config = {
 		includes: "../_includes", // default: "_includes" (`input` relative)
 		data: "../_data", // default: "_data" (`input` relative)
 		output: "public",
-		pathPrefix: "/portfolio/",
 	},
 };
