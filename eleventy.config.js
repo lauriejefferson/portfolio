@@ -32,7 +32,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// Output formats for each image.
 		formats: ["png"],
-		widths: ["600"],
+		widths: ["500"],
 		failOnError: false,
 		htmlOptions: {
 			imgAttributes: {

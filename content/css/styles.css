@@ -35,7 +35,6 @@ video {
 	font-style: italic;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
 	vertical-align: middle;
 	max-width: 100%;
 }
@@ -96,6 +95,8 @@ li {
 	--spacing-4: 3em;
 	--spacing-5: 3.5em;
 
+	--p-max-width: 100ch;
+
 }
 
 body {
@@ -103,8 +104,8 @@ body {
 	font-size: var(--fs-400);
 	background-color: var(--clr-primary);
 	display: grid;
-	/* place-items: center; */
-	text-align: center;
+	grid-template-columns: 100%;
+	/* text-align: center; */
 }
 
 h1, h2, h3 {
@@ -120,6 +121,7 @@ h1 {
 p {
 	color: var(--clr-secondary);
 	margin-block-end: var(--spacing-1);
+	text-align: left;
 }
 
 h1 {
@@ -137,8 +139,6 @@ a {
 }
 
 section {
-	display: grid;
-	place-content: center;
 	min-height: 100svh;
 }
 
@@ -147,25 +147,23 @@ h1+a {
 }
 
 p+a {
-	margin-block-start: var(--spacing-4);
+	margin-block-start: var(--spacing-1);
 }
 
 h1+p {
 	margin-block-start: var(--spacing-1);
 }
 
-header {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: space-between;
-	align-content: center;
-	margin-block-start: var(--spacing-1);
-	padding-inline: 1rem;
+.main, header, footer {
+	max-inline-size: 1100px;
+	margin-inline: auto;
 }
 
-.home {
+header {
 	display: grid;
-	justify-content: start;
+	grid-template-columns: repeat(2, minmax(150px, 1fr));
+	justify-content: space-between;
+	margin-block-start: 1em;
 }
 
 nav {
@@ -175,14 +173,13 @@ nav {
 
 .nav {
 	display: grid;
-	grid-template-columns: repeat(3, 100px);
 	place-items: center;
-
 }
 
 .hero {
 	display: grid;
-	place-items: center;
+	place-content: center;
+	place-items: start;
 }
 
 .primary-cta {
@@ -195,47 +192,16 @@ nav {
 	letter-spacing: 2px;
 }
 
-.hire {
-	display: grid;
-	place-items: center;
-}
-
-.skills-list {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 100px);
-	place-items: center;
-}
-
-.skill-list-item {
-	display: grid;
-	grid-template-rows: repeat(2, 1fr);
-}
-
-.skill-list-item .skill-name {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(300px, 1fr));
-	justify-content: space-between;
-	align-content: center;
-}
-
-.skill-list-item .skill-indicator {
-	width: 90%;
-	height: 7px;
-	background: var(--clr-accent);
-	border-radius: 6px;
-}
-
-
 .projects-list {
 	display: grid;
-	place-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	place-content: center;
 	gap: 1em
 }
 
 .project-list-item {
 	display: grid;
-	place-content: center;
+	place-content: start;
 }
 
 .project {
@@ -266,6 +232,10 @@ nav {
 .project-title {
 	color: var(--clr-primary);
 	padding-block: 1em;
+}
+
+.project-image {
+	height: 250px;
 }
 
 .contact {

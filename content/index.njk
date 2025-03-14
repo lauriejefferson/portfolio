@@ -5,58 +5,12 @@ const eleventyNavigation = {
 };
 ---
 <section class='hero'>
-	<h1 class='hero-title'>I'm a Frontend Web Developer based in Washington, DC.</h1>
+	<h1 class='hero-title'>I make modern, responsive websites.</h1>
+	<p>I'm a frontend developer who builds websites using HTML, CSS and a few other tools listed below. Take a look at a few of my featured projects or find more on GitHub.</p>
+	{# <p>Thanks to Max Bock, Kevin Powell and Camilo Garcia for inspiration for this website.</p> #}
 	<a class="primary-cta" href='/'>Get In Touch</a>
 </section>
-<section class='hire'>
-		<h1 class='hire-title'>Why Hire Me?</h1>
-		<p class='hire-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non odio? Consequatur eveniet fuga doloremque veritatis ab tempore a suscipit!</p>
-		<ul class='skills-list'>
-			<li class='skill-list-item'>
-				<div class='skill-name'>
-				<p>HTML</p>
-				<p>90%</p>
-				</div>
-				<div class="skill-indicator"></div>
-			</li>
-			<li class='skill-list-item'>
-				<div class='skill-name'>
-					<p>CSS</p>
-					<p>90%</p>
-				</div>
-				<div class="skill-indicator"></div>
-			</li>
-			<li class='skill-list-item'>
-					<div class='skill-name'>
-				   <p>JS</p>
-					 <p>90%</p>
-					</div>
-					<div class="skill-indicator"></div>
-			</li>
-			<li class='skill-list-item'>
-					<div class='skill-name'>
-				   <p>11ty</p>
-					 <p>80%</p>
-					</div>
-					<div class="skill-indicator"></div>
-			</li>
-			<li class='skill-list-item'>
-				<div class='skill-name'>
-					<p>VUE</p>
-					<p>90%</p>
-				</div>
-				<div class="skill-indicator"></div>
-			</li>
-			<li class='skill-list-item'>
-				<div class='skill-name'>
-				   <p>Astro.js</p>
-					 <p>80%</p>
-				</div>
-				<div class="skill-indicator"></div>
-			</li>
-		</ul>
 
-</section>
 <section class='projects'>
 <h1 class='projects-title'>Featured Projects</h1>
 		<ul class='projects-list'>
@@ -69,12 +23,25 @@ const eleventyNavigation = {
 							<a href="{{ item.repository }}" class='project-link' ><box-icon type='logo' name='github' color=var(--clr-primary)></box-icon></a>
 							<a href="{{ item.site }}" class='project-link'><box-icon name='link-external' color=var(--clr-primary) ></box-icon></a>
 						</div>
-						<img src="{{ item.image }}" alt="frontend-mentor" height="300">
+						<img src="{{ item.image }}" alt="frontend-mentor" class="project-image">
 					</div>
 				</li>
 				{% endif %}
 		{% endfor %}
 		</ul>
+</section>
+<section class='skills'>
+<h1 class="skills-title">Skills</h1>
+<ul class="skills-list">
+	{% for skill in skills %}
+	<li class="skills-list-item">
+		<h2 class="skill-name"></h2>
+		<div class="skill-logos">
+			<div class="skill-logo"></div>
+		</div>
+	</li>
+	{% endfor %}
+</ul>
 </section>
 <section class='contact'>
 	<h1 class='contact-title'>Let's Work Together</h1>
