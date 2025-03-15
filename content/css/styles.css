@@ -239,34 +239,38 @@ nav {
 }
 
 .contact {
-	background-color: var(--clr-secondary);
+	/* background-color: var(--clr-secondary); */
 	display: grid;
+	place-content: center;
 	place-items: center;
 }
 
-
+.contact-title {
+	color: var(--clr-secondary);
+}
 
 .contact-title {
-	color: var(--clr-primary);
+	color: var(--clr-secondary);
 }
 
 .contact-text {
-	color: var(--clr-primary);
+	color: var(--clr-secondary);
 }
 
 .secondary-cta {
-	background-color: var(--clr-primary);
+	border: 3px solid var(--clr-secondary);
 	border-radius: 50px;
 	width: 10em;
 	padding: 0.5em 1.5em;
 	color: var(--clr-secondary);
 	font-weight: var(--fw-600);
 	letter-spacing: 2px;
+	text-align: center;
 }
 
 footer {
 	display: grid;
-	background-color: var(--clr-secondary);
+	color: var(--clr-secondary);
 }
 
 footer>p {

@@ -1,0 +1,77 @@
+[
+	{
+		"type": "frontend",
+		"name": "HTML",
+		"icon": ""
+	},
+	{
+		"type": "frontend",
+		"name": "CSS",
+		"icon": ""
+	},
+	{
+		"type": "frontend",
+		"name": "JS",
+		"icon": ""
+	},
+	{
+		"type": "frontend",
+		"name": "Vue",
+		"icon": ""
+	},
+	{
+		"type": "ssg",
+		"name": "11ty",
+		"icon": ""
+	},
+	{
+		"type": "ssg",
+		"name": "Astro",
+		"icon": ""
+	},
+	{
+		"type": "ssg",
+		"name": "WordPress",
+		"icon": ""
+	},
+	{
+		"type": "backend",
+		"name": "Node.js",
+		"icon": ""
+	},
+	{
+		"type": "backend",
+		"name": "Express",
+		"icon": ""
+	},
+	{
+		"type": "backend",
+		"name": "MySQL",
+		"icon": ""
+	},
+	{
+		"type": "backend",
+		"name": "PostgresQL",
+		"icon": ""
+	},
+	{
+		"type": "tools",
+		"name": "Git",
+		"icon": ""
+	},
+	{
+		"type": "tools",
+		"name": "GitHub",
+		"icon": ""
+	},
+	{
+		"type": "tools",
+		"name": "VSCode",
+		"icon": ""
+	},
+	{
+		"type": "tools",
+		"name": "Figma",
+		"icon": ""
+	}
+]
