@@ -1,0 +1,17 @@
+[
+	{
+		"icon": "",
+		"name": "Web Design",
+		"description": "I can transform your style guides and designs into a modern, responsive website."
+	},
+	{
+		"icon": "",
+		"name": "Web Hosting",
+		"description": "I can transform your style guides and designs into a modern, responsive website."
+	},
+	{
+		"icon": "",
+		"name": "Design System",
+		"description": "I can build a basic design system (tokens, variables, components) in Figma."
+	}
+]

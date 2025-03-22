@@ -2,76 +2,56 @@
 	{
 		"type": "frontend",
 		"name": "HTML",
-		"icon": ""
+		"icon": "img/64px-HTML5_logo_and_wordmark.svg.png"
 	},
 	{
 		"type": "frontend",
 		"name": "CSS",
-		"icon": ""
+		"icon": "img/64px-Official_CSS_Logo.svg.png"
 	},
 	{
 		"type": "frontend",
 		"name": "JS",
-		"icon": ""
+		"icon": "img/64px-JavaScript-logo.png"
+	},
+	{
+		"type": "frontend",
+		"name": "Sass",
+		"icon": "img/icons8-sass-avatar-96.png"
 	},
 	{
 		"type": "frontend",
 		"name": "Vue",
-		"icon": ""
+		"icon": "img/logo.png"
 	},
 	{
 		"type": "ssg",
 		"name": "11ty",
-		"icon": ""
+		"icon": "img/logo-96x96.png"
 	},
 	{
 		"type": "ssg",
 		"name": "Astro",
-		"icon": ""
+		"icon": "img/astro-icon-light-gradient.png"
 	},
 	{
 		"type": "ssg",
 		"name": "WordPress",
-		"icon": ""
-	},
-	{
-		"type": "backend",
-		"name": "Node.js",
-		"icon": ""
-	},
-	{
-		"type": "backend",
-		"name": "Express",
-		"icon": ""
-	},
-	{
-		"type": "backend",
-		"name": "MySQL",
-		"icon": ""
-	},
-	{
-		"type": "backend",
-		"name": "PostgresQL",
-		"icon": ""
+		"icon": "img/64px-Font_Awesome_5_brands_wordpress.svg.png"
 	},
 	{
 		"type": "tools",
 		"name": "Git",
-		"icon": ""
+		"icon": "img/Git-Icon-1788C.png"
 	},
 	{
 		"type": "tools",
 		"name": "GitHub",
-		"icon": ""
-	},
-	{
-		"type": "tools",
-		"name": "VSCode",
-		"icon": ""
+		"icon": "img/GitHub_Invertocat_Dark.png"
 	},
 	{
 		"type": "tools",
 		"name": "Figma",
-		"icon": ""
+		"icon": "img/Figma Icon (Full-color).png"
 	}
 ]
