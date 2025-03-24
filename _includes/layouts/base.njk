@@ -6,7 +6,6 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="stylesheet" href="/css/styles.css">
-
 	</head>
 	<body>
 		{# <a href="#skip" class="visually-hidden">Skip to main content</a> #}
@@ -28,7 +27,6 @@
 		<main id="skip" class="main">
 				{{ content | safe }}
 		</main>
-
 		<footer>
 			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
 			<div class='footer-links'>
@@ -38,6 +36,6 @@
 				</div>
 			</div>
 		</footer>
-				<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+			<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 	</body>
 </html>

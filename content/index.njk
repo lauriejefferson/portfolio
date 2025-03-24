@@ -14,21 +14,26 @@ const eleventyNavigation = {
 <section class="about">
 	<h1>About Me</h1>
 	<p>I’m a Frontend developer who builds modern, responsive websites using HTMl, CSS and just enough JavaScript.  I also use static-site generators 11ty and Astro to build content-driven websites.</p>
+	<h2>Tools I Use:</h2>
 	<ul class="skills">
+		{% for skill in skills %}
 		<li class="skills-list-item">
-			<img src="" alt="">
+			<img src={{ skill.icon}} alt={{ skill.name }} width="64" height="64">
 		</li>
+		{% endfor %}
 	</ul>
 </section>
 <section class="services">
 	<h1>Services</h1>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia in quis quo magnam voluptatem nisi totam corrupti, iure sapiente!</p>
+	<p>I can take your project from style guide to completion and launch them with ease.</p>
 	<ul class="services-list">
+		{% for service in services %}
 		<li class="services-list-item">
-			<img src="" alt="service-log">
-			<h2 class="service-title"></h2>
-			<p class="service-text"></p>
+			<img src={{ service.icon }} alt={{ service.name }}>
+			<h2 class="service-title">{{ service.name }}</h2>
+			<p class="service-text">{{ service.description}}</p>
 		</li>
+		{% endfor %}
 	</ul>
 </section>
 <section class='projects'>

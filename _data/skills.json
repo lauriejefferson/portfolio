@@ -32,7 +32,7 @@
 	{
 		"type": "ssg",
 		"name": "Astro",
-		"icon": "img/astro-icon-light-gradient.png"
+		"icon": "img/astro-icon-dark.png"
 	},
 	{
 		"type": "ssg",
@@ -52,6 +52,6 @@
 	{
 		"type": "tools",
 		"name": "Figma",
-		"icon": "img/Figma Icon (Full-color).png"
+		"icon": "img/Figma-Icon-Full-color.png"
 	}
 ]

@@ -1,16 +1,16 @@
 [
 	{
-		"icon": "",
+		"icon": "img/window-alt-regular-60.png",
 		"name": "Web Design",
 		"description": "I can transform your style guides and designs into a modern, responsive website."
 	},
 	{
-		"icon": "",
+		"icon": "img/server-regular-60.png",
 		"name": "Web Hosting",
 		"description": "I can transform your style guides and designs into a modern, responsive website."
 	},
 	{
-		"icon": "",
+		"icon": "img/palette-regular-60.png",
 		"name": "Design System",
 		"description": "I can build a basic design system (tokens, variables, components) in Figma."
 	}
