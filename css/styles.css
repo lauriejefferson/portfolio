@@ -52,6 +52,7 @@ h6 {
 
 /* improve readability with max-width on paragraphs and lists */
 /* prevent orphans in supported browsers */
+
 p,
 li {
 	max-width: var(--p-max-width, 65ch);
@@ -203,22 +204,12 @@ nav {
 	letter-spacing: 2px;
 }
 
-.skills {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(100px, 1fr));
-	gap: 2.5em;
-}
 
-.services {
-	display: grid;
-	place-items: center;
-}
 
-.services-list {
+.services-list-item {
 	display: grid;
-	place-items: center;
-	grid-template-columns: repeat(3, minmax(250px, 1fr));
-	gap: 2em;
+	/* outline: 3px solid var(--clr-accent-1); */
+
 }
 
 .projects-container {
@@ -309,4 +300,21 @@ nav {
 
 footer {
 	color: var(--clr-secondary);
+}
+
+@media (width >=768px) {
+
+	.skills {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(250px, 1fr));
+		place-items: center;
+		gap: 2.5em;
+	}
+
+	.services-list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(300px, 1fr));
+		place-content: center;
+		gap: 1.5em;
+	}
 }
