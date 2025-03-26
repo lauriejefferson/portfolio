@@ -9,24 +9,16 @@
 	</head>
 	<body>
 		
-		<header>
-			<div class="home">
-				<a href="/portfolio/" class="home-link">Portfolio</a>
-			</div>
-			<nav>
-				
-				<ul class="nav">
-					<li class="nav-item"><a href="/portfolio/" aria-current="page">Home</a></li>
-				</ul>
-			</nav>
-		</header>
 
 		<main id="skip" class="main">
 				<section class="hero">
+	<h3 class="name" id="hi-i-m-laurie">Hi, I'm Laurie.</h3>
 	<h1 class="hero-title" id="i-make-modern-responsive-websites">I make modern, responsive websites.</h1>
 	<p>I'm a frontend developer who builds websites using HTML, CSS and a few other tools listed below. Take a look at my featured projects or find more on GitHub.</p>
 	
-	<a class="primary-cta" href="/portfolio/">Get In Touch</a>
+	<div class="hero-link">
+		<a class="primary-cta" href="/portfolio/">Get In Touch</a>
+	</div>
 </section>
 
 <section class="about">
@@ -81,9 +73,11 @@
 		
 	</ul>
 </section>
+
 <section class="services">
 	<h1 id="services">Services</h1>
 	<p>I can take your project from style guide to completion and launch them with ease.</p>
+
 	<ul class="services-list">
 		
 		<li class="services-list-item">
@@ -105,9 +99,12 @@
 		</li>
 		
 	</ul>
+
 </section>
+
 <section class="projects">
 <h1 class="projects-title" id="featured-projects">Featured Projects</h1>
+<div class="projects-container">
 		<ul class="projects-list">
 			
 				
@@ -146,7 +143,7 @@
 						<div class="project-links">
 							<h2 class="project-title" id="intro-section-with-dropdown-navigation">Intro Section with Dropdown Navigation</h2>
 							<a href="https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/intro-section-with-dropdown-navigation-main" class="project-link"><box-icon type="logo" name="github" color="var(--clr-primary)"></box-icon></a>
-							<a href="." class="project-link"><box-icon name="link-external" color="var(--clr-primary)"></box-icon></a>
+							<a href="https://lauriejefferson.github.io/frontend-mentor-solutions/intro-section-with-dropdown-navigation-main/index.html" class="project-link"><box-icon name="link-external" color="var(--clr-primary)"></box-icon></a>
 						</div>
 						<img src="/portfolio/P4m0b5uiNg-500.png" alt="frontend-mentor" class="project-image" loading="lazy" decoding="async" width="500" height="373">
 					</div>
@@ -162,26 +159,31 @@
 				
 		
 		</ul>
+		</div>
 		<a href="https://github.com/lauriejefferson/frontend-mentor-solutions">See All Projects</a>
 </section>
+
 <section class="contact">
 	<h1 class="contact-title" id="lets-work-together">Let's Work Together</h1>
 	<p class="contact-text">Have a project in mind? Want to discuss opportunities with your organization? Let's discuss.</p>
-	<a class="secondary-cta" href="/portfolio/">Contact Me</a>
+	<div class="contact-link">
+		<a class="secondary-cta" href="/portfolio/">Contact Me</a>
+	</div>
 </section>
 
 
 
 		</main>
-		<footer>
-			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
-			<div class="footer-links">
-				<div class="github">
-				</div>
-				<div class="linkedin">
-				</div>
-			</div>
-		</footer>
+   <footer>
+	<p>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></p>
+	<div class="footer-links">
+		<div class="github">
+		</div>
+		<div class="linkedin">
+		</div>
+	</div>
+</footer>
+
 			<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 	</body>
 </html>
