@@ -5,10 +5,13 @@ const eleventyNavigation = {
 };
 ---
 <section class='hero'>
+	<h3 class="name">Hi, I'm Laurie.</h3>
 	<h1 class='hero-title'>I make modern, responsive websites.</h1>
 	<p>I'm a frontend developer who builds websites using HTML, CSS and a few other tools listed below. Take a look at my featured projects or find more on GitHub.</p>
 	{# <p>Thanks to Max Bock, Kevin Powell and Camilo Garcia for inspiration for this website.</p> #}
-	<a class="primary-cta" href='/'>Get In Touch</a>
+	<div class="hero-link">
+		<a class="primary-cta" href='/'>Get In Touch</a>
+	</div>
 </section>
 
 <section class="about">
@@ -23,9 +26,11 @@ const eleventyNavigation = {
 		{% endfor %}
 	</ul>
 </section>
+
 <section class="services">
 	<h1>Services</h1>
 	<p>I can take your project from style guide to completion and launch them with ease.</p>
+
 	<ul class="services-list">
 		{% for service in services %}
 		<li class="services-list-item">
@@ -35,9 +40,12 @@ const eleventyNavigation = {
 		</li>
 		{% endfor %}
 	</ul>
+
 </section>
+
 <section class='projects'>
 <h1 class='projects-title'>Featured Projects</h1>
+<div class="projects-container">
 		<ul class='projects-list'>
 			{% for item in github %}
 				{% if item.featured == true %}
@@ -54,11 +62,15 @@ const eleventyNavigation = {
 				{% endif %}
 		{% endfor %}
 		</ul>
+		</div>
 		<a href="https://github.com/lauriejefferson/frontend-mentor-solutions">See All Projects</a>
 </section>
+
 <section class='contact'>
 	<h1 class='contact-title'>Let's Work Together</h1>
 	<p class='contact-text'>Have a project in mind? Want to discuss opportunities with your organization? Let's discuss.</p>
-	<a class='secondary-cta' href='/'>Contact Me</a>
+	<div class="contact-link">
+		<a class='secondary-cta' href='/'>Contact Me</a>
+	</div>
 </section>
 

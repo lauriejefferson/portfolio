@@ -35,7 +35,7 @@
 		"name": "Intro Section with Dropdown Navigation",
 		"description": "A landing page with dropdown navigation.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/intro-section-with-dropdown-navigation-main",
-		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/intro-section-with-dropdown-navigation-main/index.html",
+		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/intro-section-with-dropdown-navigation-main/index.html",
 		"image": "img/intro-section-dropdown-nav.png",
 		"featured": true
 	},
@@ -43,7 +43,7 @@
 		"name": "SunnySide Agency Landing Page",
 		"description": "A multi-section landing page with social media testimonials. ",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/sunnyside-agency-landing-page-main",
-		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/sunnyside-agency-landing-page-main/index.html",
+		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/sunnyside-agency-landing-page-main/index.html",
 		"image": "img/sunnyside-agency.png",
 		"featured": false
 	},
@@ -51,7 +51,7 @@
 		"name": "Results Summary Component",
 		"description": "A results summary component that changes layout when changing from mobile to desktop.",
 		"repository": "https://github.com/lauriejefferson/frontend-mentor-solutions/tree/main/results-summary-component-main",
-		"live-site": "https://lauriejefferson.github.io/frontend-mentor-solutions/results-summary-component-main/index.html",
+		"site": "https://lauriejefferson.github.io/frontend-mentor-solutions/results-summary-component-main/index.html",
 		"image": "img/results-summary.png",
 		"featured": false
 	},
