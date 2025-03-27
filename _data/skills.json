@@ -25,6 +25,11 @@
 		"icon": "img/logo.png"
 	},
 	{
+		"type": "frontend",
+		"name": "PHP",
+		"icon": "img/php-logo-bigger.png"
+	},
+	{
 		"type": "ssg",
 		"name": "11ty",
 		"icon": "img/logo-96x96.png"
