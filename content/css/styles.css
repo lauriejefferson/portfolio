@@ -219,6 +219,10 @@ nav {
 
 }
 
+.projects>h1 {
+	text-align: center;
+}
+
 .projects-container {
 	container-type: inline-size
 }
@@ -306,7 +310,18 @@ nav {
 }
 
 footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	align-items: center;
 	color: var(--clr-secondary);
+}
+
+.footer-links {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	justify-self: end;
 }
 
 @media (width <=768px) {
@@ -338,7 +353,7 @@ footer {
 	.services-list {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(300px, 1fr));
-		place-content: center;
+		justify-content: center;
 		gap: 1.5em;
 	}
 }
