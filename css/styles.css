@@ -186,6 +186,10 @@ nav {
 	place-items: center;
 }
 
+.hero, .about {
+	text-align: center;
+}
+
 .name {
 	text-transform: uppercase;
 	background: linear-gradient(to right, var(--clr-secondary), var(--clr-accent-1));
@@ -193,6 +197,7 @@ nav {
 	color: transparent;
 	font-weight: var(--fw-800);
 }
+
 
 .primary-cta {
 	border-radius: 50px;
@@ -204,7 +209,9 @@ nav {
 	letter-spacing: 2px;
 }
 
-
+.services>p {
+	text-align: center;
+}
 
 .services-list-item {
 	display: grid;
@@ -300,6 +307,23 @@ nav {
 
 footer {
 	color: var(--clr-secondary);
+}
+
+@media (width <=768px) {
+
+	.skills {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(250px, 1fr));
+		place-items: center;
+		gap: 2.5em;
+	}
+
+	.services-list {
+		display: grid;
+		grid-template-columns: 1fr;
+		place-content: center;
+		gap: 1.5em;
+	}
 }
 
 @media (width >=768px) {
