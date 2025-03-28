@@ -361,6 +361,7 @@ footer {
 		grid-template-columns: repeat(3, minmax(300px, 1fr));
 		grid-template-rows: auto auto 1fr;
 		justify-content: center;
+		gap: 1em;
 	}
 
 	.services-list-item {
