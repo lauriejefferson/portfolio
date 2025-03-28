@@ -38,6 +38,7 @@ video {
 	background-size: cover;
 	vertical-align: middle;
 	max-width: 100%;
+	height: auto;
 }
 
 /* Improved heading in supported browsers */
@@ -91,6 +92,8 @@ li {
 	--header-5: var(--fs-500);
 	--fs-body: var(--fs-400);
 
+	--spacing--2: 0.5em;
+	--spacing--1: 0.75em;
 	--spacing-1: 1em;
 	--spacing-2: 2em;
 	--spacing-3: 2.5em;
@@ -147,6 +150,9 @@ section {
 	min-height: 100svh;
 }
 
+h3+h1 {
+	--flow-space: var(--spacing--2);
+}
 
 h1+p {
 	--flow-space: var(--spacing-1);
@@ -154,13 +160,12 @@ h1+p {
 
 h1+a {
 	--flow-space: var(--spacing-1);
-
 }
 
 p+div {
-	--flow-space: var(--spacing-1);
-
+	--flow-space: var(--spacing-2);
 }
+
 
 .flow>*+* {
 	margin-block-start: var(--flow-space, 1em);
@@ -354,7 +359,13 @@ footer {
 	.services-list {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(300px, 1fr));
+		grid-template-rows: auto auto 1fr;
 		justify-content: center;
-		gap: 1.5em;
+	}
+
+	.services-list-item {
+		display: grid;
+		grid-template-rows: subgrid;
+		grid-row: span 3;
 	}
 }
