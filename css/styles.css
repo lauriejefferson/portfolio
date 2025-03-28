@@ -147,23 +147,24 @@ section {
 	min-height: 100svh;
 }
 
-h1+a {
-	margin-block-start: var(--spacing-4);
-}
-
 
 h1+p {
-	margin-block-start: var(--spacing-1);
+	--flow-space: var(--spacing-1);
 }
 
 h1+a {
-	margin-block-end: var(--spacing-1);
+	--flow-space: var(--spacing-1);
+
 }
 
 p+div {
-	margin-block-start: var(--spacing-1);
+	--flow-space: var(--spacing-1);
+
 }
 
+.flow>*+* {
+	margin-block-start: var(--flow-space, 1em);
+}
 
 header {
 	display: grid;
