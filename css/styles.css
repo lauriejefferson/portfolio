@@ -232,8 +232,9 @@ nav {
 
 .services-list-item {
 	display: grid;
-	/* outline: 3px solid var(--clr-accent-1); */
-
+	padding: 1em;
+	border: 2px solid var(--clr-secondary);
+	border-radius: 10px;
 }
 
 .projects>h1 {
@@ -266,6 +267,7 @@ nav {
 	display: grid;
 	place-items: center;
 	isolation: isolate;
+
 }
 
 .project>* {
