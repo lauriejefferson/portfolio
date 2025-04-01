@@ -280,7 +280,7 @@ nav {
 }
 
 .project-links {
-	margin-inline: 5em;
+	margin-inline: 3em;
 }
 
 .project-link {
@@ -294,6 +294,16 @@ nav {
 
 .project-image {
 	height: 350px;
+}
+
+.all-projects {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.all-projects:not(:is(:hover, :focus)) {
+	text-decoration-color:
+		color-mix(in srgb, currentColor, transparent 75%);
 }
 
 .contact {

@@ -49,11 +49,11 @@ const eleventyNavigation = {
 				{% if item.featured == true %}
 				<li class='project-list-item'>
 					<div class='project'>
-						<div class='project-links'>
-							<h2 class='project-title'>{{ item.name }}</h2>
-							<a href="{{ item.repository }}" class='project-link' ><box-icon type='logo' name='github' color=var(--clr-primary)></box-icon></a>
-							<a href="{{ item.site }}" class='project-link'><box-icon name='link-external' color=var(--clr-primary) ></box-icon></a>
-						</div>
+							<div class="project-links">
+								<h2 class='project-title'>{{ item.name }}</h2>
+								<a href="{{ item.repository }}" class='project-link' ><box-icon type='logo' name='github' color=var(--clr-primary)></box-icon></a>
+								<a href="{{ item.site }}" class='project-link'><box-icon name='link-external' color=var(--clr-primary) ></box-icon></a>
+							</div>
 						<img src="{{ item.image }}" alt="frontend-mentor" class="project-image">
 					</div>
 				</li>
@@ -61,7 +61,7 @@ const eleventyNavigation = {
 		{% endfor %}
 		</ul>
 		</div>
-		<a href="https://github.com/lauriejefferson/frontend-mentor-solutions">See All Projects</a>
+		<a href="https://github.com/lauriejefferson/frontend-mentor-solutions" class='all-projects'>See All Projects</a>
 </section>
 
 <section class='contact flow'>
