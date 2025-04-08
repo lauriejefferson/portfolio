@@ -256,11 +256,17 @@ nav {
 			grid-column: span 2;
 		}
 	}
+
 }
 
 .project-list-item {
 	display: grid;
 	place-content: start;
+	transition: transform 500ms ease;
+}
+
+.project-list-item:hover {
+	transform: scale(1.05);
 }
 
 .project {
@@ -275,6 +281,7 @@ nav {
 	grid-row: 1/-1;
 }
 
+
 .project>img {
 	z-index: -1;
 	filter: brightness(40%);
@@ -282,7 +289,7 @@ nav {
 }
 
 .project-links {
-	margin-inline: 3em;
+	margin-inline: 2.5em;
 }
 
 .project-link {
@@ -296,6 +303,17 @@ nav {
 
 .project-image {
 	height: 350px;
+}
+
+
+.project-description {
+	color: var(--clr-primary);
+	transform: translateY(7em);
+	transition: transform 500ms ease;
+}
+
+.project-list-item:hover .project-description {
+	transform: translateY(0)
 }
 
 .all-projects {
