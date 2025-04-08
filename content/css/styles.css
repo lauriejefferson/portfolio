@@ -248,7 +248,6 @@ nav {
 .projects-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-template-rows: max-content;
 	gap: 1em;
 
 	@container (width >=calc(200px * 2 + 1rem)) {
@@ -305,11 +304,11 @@ nav {
 	height: 350px;
 }
 
-
 .project-description {
 	color: var(--clr-primary);
 	transform: translateY(7em);
 	transition: transform 500ms ease;
+	overflow: hidden;
 }
 
 .project-list-item:hover .project-description {
