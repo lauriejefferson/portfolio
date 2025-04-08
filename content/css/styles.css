@@ -248,7 +248,7 @@ nav {
 .projects-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	place-items: center;
+	grid-template-rows: max-content;
 	gap: 1em;
 
 	@container (width >=calc(200px * 2 + 1rem)) {
@@ -263,6 +263,7 @@ nav {
 	display: grid;
 	place-content: start;
 	transition: transform 500ms ease;
+	overflow: hidden;
 }
 
 .project-list-item:hover {
@@ -273,7 +274,6 @@ nav {
 	display: grid;
 	place-items: center;
 	isolation: isolate;
-
 }
 
 .project>* {
