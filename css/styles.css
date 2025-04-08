@@ -273,6 +273,7 @@ nav {
 	display: grid;
 	place-items: center;
 	isolation: isolate;
+	overflow: hidden;
 }
 
 .project>* {
@@ -306,9 +307,8 @@ nav {
 
 .project-description {
 	color: var(--clr-primary);
-	transform: translateY(7em);
+	transform: translateY(7.5em);
 	transition: transform 500ms ease;
-	overflow: hidden;
 }
 
 .project-list-item:hover .project-description {
