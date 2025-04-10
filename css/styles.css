@@ -193,7 +193,7 @@ nav {
 	place-items: center;
 }
 
-.hero, .about {
+.hero, .about, .services, .contact {
 	text-align: center;
 }
 
@@ -325,22 +325,8 @@ nav {
 		color-mix(in srgb, currentColor, transparent 75%);
 }
 
-.contact {
-	/* background-color: var(--clr-secondary); */
-	/* display: grid;
-	place-content: center;
-	place-items: center; */
-}
 
 .contact-title {
-	color: var(--clr-secondary);
-}
-
-.contact-title {
-	color: var(--clr-secondary);
-}
-
-.contact-text {
 	color: var(--clr-secondary);
 }
 
@@ -420,4 +406,6 @@ footer {
 		grid-template-rows: subgrid;
 		grid-row: span 3;
 	}
+
+
 }
