@@ -262,7 +262,7 @@ nav {
 	display: grid;
 	place-content: start;
 	transition: transform 500ms ease;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .project-list-item:hover {
@@ -384,6 +384,10 @@ footer {
 		grid-template-columns: repeat(2, minmax(150px, 1fr));
 		place-items: center;
 		gap: 0.5em;
+	}
+
+	.services {
+		padding-block: 4em;
 	}
 
 	.services-list {
