@@ -28,17 +28,19 @@ const eleventyNavigation = {
 </section>
 
 <section class="services flow">
+	<div class="services-intro">
 	<h1>Services</h1>
 	<p>I can take your project from style guide to completion and launch them with ease.</p>
-	<ul class="services-list">
+		</div>
+	<div class="services-container">
 		{% for service in services %}
-		<li class="services-list-item">
+		<div class="services-item">
 			<img src={{ service.icon }} alt={{ service.name }}>
 			<h2 class="service-title">{{ service.name }}</h2>
 			<p class="service-text">{{ service.description}}</p>
-		</li>
+		</div>
 		{% endfor %}
-	</ul>
+	</div>
 </section>
 
 <section class='projects flow'>

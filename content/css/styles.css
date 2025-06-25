@@ -1,63 +1,68 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@layer reset;
 
-/* makes sizing simpler */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+@layer reset {
 
-/* remove default spacing */
-/* force styling of type through styling, rather than elements */
-* {
-	margin: 0;
-	padding: 0;
-	font: inherit;
-}
+	/* makes sizing simpler */
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
 
-/* dark mode user-agent-styles */
-/* improves punctuation in supported browsers */
-html {
-	/* color-scheme: dark light; */
-	hanging-punctuation: first last;
-}
+	/* remove default spacing */
+	/* force styling of type through styling, rather than elements */
+	* {
+		margin: 0;
+		padding: 0;
+		font: inherit;
+	}
 
-/* min body height */
-body {
-	min-height: 100svh;
-}
+	/* dark mode user-agent-styles */
+	/* improves punctuation in supported browsers */
+	html {
+		/* color-scheme: dark light; */
+		hanging-punctuation: first last;
+	}
 
-/* responsive images/videos */
-img,
-picture,
-svg,
-video {
-	font-style: italic;
-	background-repeat: no-repeat;
-	background-size: cover;
-	vertical-align: middle;
-	max-width: 100%;
-	height: auto;
-}
+	/* min body height */
+	body {
+		min-height: 100svh;
+	}
 
-/* Improved heading in supported browsers */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-wrap: balance;
-}
+	/* responsive images/videos */
+	img,
+	picture,
+	svg,
+	video {
+		font-style: italic;
+		background-repeat: no-repeat;
+		background-size: cover;
+		vertical-align: middle;
+		max-width: 100%;
+		height: auto;
+	}
 
-/* improve readability with max-width on paragraphs and lists */
-/* prevent orphans in supported browsers */
+	/* Improved heading in supported browsers */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+	}
 
-p,
-li {
-	max-width: var(--p-max-width, 65ch);
-	text-wrap: pretty;
+	/* improve readability with max-width on paragraphs and lists */
+	/* prevent orphans in supported browsers */
+
+	p,
+	li {
+		max-width: var(--p-max-width, 65ch);
+		text-wrap: pretty;
+	}
+
 }
 
 :root {
@@ -188,7 +193,7 @@ nav {
 	place-items: center;
 }
 
-.hero, .about, .services, .contact {
+.hero, .about, .contact {
 	display: grid;
 	place-items: center;
 }
@@ -218,31 +223,47 @@ nav {
 	transition: all 0.5s ease;
 }
 
-
-
 .primary-cta:hover {
 	background-color: var(--clr-primary);
 	color: var(--clr-secondary);
 	border: 2px solid var(--clr-secondary);
 }
 
-.services>p {
+
+
+.services {
+	container-type: inline-size;
+	container-name: services-container;
+}
+
+.services-intro {
 	text-align: center;
 }
 
-.services-list-item {
-	display: grid;
-	padding: 1em;
-	border: 2px solid var(--clr-secondary);
-	border-radius: 10px;
+
+@container services-container (min-width: 768px) {
+	.services-container {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(300px, 1fr));
+		place-items: center;
+		gap: 1rem;
+	}
+
+	.services-item {
+		display: grid;
+		grid-template-columns: subgrid;
+		gap: 1rem;
+	}
 }
+
 
 .projects>h1 {
 	text-align: center;
 }
 
 .projects-container {
-	container-type: inline-size
+	container-type: inline-size;
+	container-name: projects;
 }
 
 .projects-list {
@@ -250,7 +271,7 @@ nav {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap: 1em;
 
-	@container (width >=calc(200px * 2 + 1rem)) {
+	@container projects (width >=calc(220px * 2 + 1rem)) {
 		.project-list-item {
 			grid-column: span 2;
 		}
@@ -262,7 +283,6 @@ nav {
 	display: grid;
 	place-content: start;
 	transition: transform 500ms ease;
-	/* overflow: hidden; */
 }
 
 .project-list-item:hover {
@@ -363,6 +383,10 @@ footer {
 	justify-self: end;
 }
 
+.eleventy-link {
+	font-size: var(--fs-400);
+}
+
 @media (width <=768px) {
 
 	.skills {
@@ -376,12 +400,13 @@ footer {
 		padding-block: 4em;
 	}
 
+	/*
 	.services-list {
 		display: grid;
 		grid-template-columns: 1fr;
 		place-content: center;
 		gap: 1.5em;
-	}
+	} */
 }
 
 @media (width >=768px) {
@@ -393,19 +418,7 @@ footer {
 		gap: 2.5em;
 	}
 
-	.services-list {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(300px, 1fr));
-		grid-template-rows: auto auto 1fr;
-		justify-content: center;
-		gap: 1em;
-	}
 
-	.services-list-item {
-		display: grid;
-		grid-template-rows: subgrid;
-		grid-row: span 3;
-	}
 
 
 }
