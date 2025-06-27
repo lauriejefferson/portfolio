@@ -46,10 +46,10 @@ const eleventyNavigation = {
 <section class='projects flow'>
 <h1 class='projects-title'>Featured Projects</h1>
 <div class="projects-container">
-		<ul class='projects-list'>
+		<div class='projects-list'>
 			{% for item in github %}
 				{% if item.featured == true %}
-				<li class='project-list-item'>
+				<div class='project-list-item'>
 					<div class='project'>
 							<div class="project-links">
 								<h2 class='project-title'>{{ item.name }}</h2>
@@ -59,10 +59,10 @@ const eleventyNavigation = {
 							</div>
 						<img src="{{ item.image }}" alt="frontend-mentor" class="project-image">
 					</div>
-				</li>
+				</div>
 				{% endif %}
 		{% endfor %}
-		</ul>
+		</div>
 		</div>
 		<a href="https://github.com/lauriejefferson/frontend-mentor-solutions" class='all-projects'>See All Projects</a>
 </section>
